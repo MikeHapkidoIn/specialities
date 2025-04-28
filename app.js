@@ -70,6 +70,7 @@ app.get('/marketing', (req, res) => {
       <title>Marketing</title>
     </head>
     <body>
+      <a href ='/'>Volver</a>
       <h1>Marketing</h1>
       <p>Número de personas: ${users.length}</p>
       <ul>
@@ -168,5 +169,5 @@ app.use((req, res) => {
 
 // Iniciar el servidor
 app.listen(PORT, () => {
-  console.log(`Servidor Express escuchando en el puerto ${PORT}`);
+  console.log(`Servidor Express escuchando en el puerto http://localhost:${PORT}`);
 });
